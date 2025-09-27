@@ -13,9 +13,14 @@ public class VariablesExamples {
 //        System.out.println("₹" + productPrice);
 
         // char
-        char grade = 'E', symbol = '^', currency = '₹';
+//        char grade = 'E', symbol = '^', currency = '₹';
+//        System.out.println("Grade: " + grade + "\nSymbol: " + symbol + "\nCurrency: " + currency);
 
-        System.out.println("Grade: " + grade + "\nSymbol: " + symbol + "\nCurrency: " + currency);
+        // boolean
+//        boolean isStudent = true, isForSale = false, isOnline = true;
+
+        // string
+        
 
     }
 }
