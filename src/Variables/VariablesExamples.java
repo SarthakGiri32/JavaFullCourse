@@ -49,5 +49,12 @@ public class VariablesExamples {
             System.out.println("The " + car + " is not for sale");
         }
 
+        // homework
+//        String bibleBookName = "Jeremiah";
+//        int bibleBookChapterCount = 52;
+//        double increaseInBiblePurchasesInUSA = 0.22;
+//        char gender = 'M';
+//        boolean isChildOfGod = true;
+
     }
 }
