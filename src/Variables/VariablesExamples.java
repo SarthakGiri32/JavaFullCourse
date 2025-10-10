@@ -36,18 +36,20 @@ public class VariablesExamples {
 //        System.out.println("Your cgpa is: " + cgpa);
 //        System.out.println("Your average letter grade is: " + grade);
 
-        String color = "violet", car = "Mclaren P1"; boolean isForSale = true;
+        String color = "violet", car = "Mclaren P1";
+//        boolean isForSale = true;
         int year = 1915; double carPrice = 4999999.99; char currencySymbol = '₹';
 
         System.out.println("Your choice is a " + color + " " + year + " " + car);
         System.out.println("The price is: " + currencySymbol + carPrice);
 
-        if (isForSale) {
-            System.out.println("There is a " + car + " for sale");
-        }
-        else {
-            System.out.println("The " + car + " is not for sale");
-        }
+//        if (isForSale) {
+//            System.out.println("There is a " + car + " for sale");
+//        }
+//        else {
+//            System.out.println("The " + car + " is not for sale");
+//        }
+        System.out.println("There is a " + car + " for sale");
 
         // homework
 //        String bibleBookName = "Jeremiah";
