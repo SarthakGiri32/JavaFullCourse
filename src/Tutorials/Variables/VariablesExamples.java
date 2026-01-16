@@ -1,4 +1,4 @@
-package Variables;
+package Tutorials.Variables;
 
 public class VariablesExamples {
     public static void main(String[] args) {
