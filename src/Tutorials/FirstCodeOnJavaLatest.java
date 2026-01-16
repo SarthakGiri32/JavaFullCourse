@@ -1,3 +1,5 @@
+package Tutorials;
+
 /**
  * My first Java refreshment code for learning Java 24
  */
