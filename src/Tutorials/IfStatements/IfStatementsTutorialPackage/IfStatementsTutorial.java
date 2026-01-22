@@ -1,4 +1,4 @@
-package Tutorials.IfStatements;
+package Tutorials.IfStatements.IfStatementsTutorialPackage;
 
 // to run this file (currently running in java 24):
 // run 'chcp 65001' in command prompt
