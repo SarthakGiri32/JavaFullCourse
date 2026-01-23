@@ -420,3 +420,23 @@ FodyWeavers.xsd
 # intellij idea created files
 *.iml
 .idea
+
+# maven files
+target/
+*.jar
+*.war
+*.ear
+dependency-reduced-pom.xml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+buildNumber.properties
+.project
+.classpath
+*.log
+hs_err_pid*
+*.class
+*.ctxt
+.mvn/timing.properties
