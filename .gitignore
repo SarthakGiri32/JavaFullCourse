@@ -440,3 +440,4 @@ hs_err_pid*
 *.class
 *.ctxt
 .mvn/timing.properties
+.vscode/settings.json
