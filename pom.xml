@@ -29,7 +29,7 @@
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>3.6.3</version>
                     <configuration>
-                        <mainClass>Tutorials.TernaryOperator.TernaryOperatorTutorial</mainClass>
+                        <mainClass>Projects.TemperatureConvertorPackage.TemperatureConvertor</mainClass>
                     </configuration>
                 </plugin>
             </plugins>
