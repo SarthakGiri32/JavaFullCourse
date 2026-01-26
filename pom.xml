@@ -29,7 +29,7 @@
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>3.6.3</version>
                     <configuration>
-                        <mainClass>Tutorials.EnhancedSwitches.EnhancedSwitchesTutorial</mainClass>
+                        <mainClass>Projects.CalculatorProgramPackage.CalculatorProgram</mainClass>
                     </configuration>
                 </plugin>
             </plugins>
