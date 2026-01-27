@@ -29,7 +29,7 @@
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>3.6.3</version>
                     <configuration>
-                        <mainClass>Tutorials.WhileLoops.DoWhileLoopsTutorialPackage.DoWhileLoopsTutorial</mainClass>
+                        <mainClass>Projects.NumberGuessingGamePackage.NumberGuessingGame</mainClass>
                     </configuration>
                 </plugin>
             </plugins>
