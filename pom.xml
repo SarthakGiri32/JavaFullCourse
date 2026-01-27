@@ -29,7 +29,7 @@
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>3.6.3</version>
                     <configuration>
-                        <mainClass>Projects.NumberGuessingGamePackage.NumberGuessingGame</mainClass>
+                        <mainClass>Exercises.ForLoops.Exercise1</mainClass>
                     </configuration>
                 </plugin>
             </plugins>
