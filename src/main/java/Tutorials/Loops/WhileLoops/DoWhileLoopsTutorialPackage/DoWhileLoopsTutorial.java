@@ -1,4 +1,4 @@
-package Tutorials.WhileLoops.DoWhileLoopsTutorialPackage;
+package Tutorials.Loops.WhileLoops.DoWhileLoopsTutorialPackage;
 
 import java.util.Scanner;
 
