@@ -29,7 +29,7 @@
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>3.6.3</version>
                     <configuration>
-                        <mainClass>Exercises.ForLoops.Exercise1</mainClass>
+                        <mainClass>Tutorials.BreakAndContinue.BreakAndContinueTutorial</mainClass>
                     </configuration>
                 </plugin>
             </plugins>
