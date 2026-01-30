@@ -14,6 +14,8 @@ public class OverloadedMethodsTutorial {
         // System.out.println(add(51, 52, 87, 7));
 
         System.out.println(bakePizza("Whole bread"));
+        System.out.println(bakePizza("thin crust", "parmesan"));
+        System.out.println(bakePizza("sourdough", "pecorino romano", "bbq chicken"));
 
     }
 
@@ -35,5 +37,13 @@ public class OverloadedMethodsTutorial {
 
     static String bakePizza(String bread) {
         return bread + " pizza";
+    }
+
+    static String bakePizza(String bread, String cheese) {
+        return cheese + " " + bread + " pizza";
+    }
+
+    static String bakePizza(String bread, String cheese, String topping) {
+        return topping + " " + cheese + " " + bread + " pizza";
     }
 }
