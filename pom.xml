@@ -29,7 +29,7 @@
                     <artifactId>exec-maven-plugin</artifactId>
                     <version>3.6.3</version>
                     <configuration>
-                        <mainClass>CodingInterviewPrograms.BrightChamps.TechnicalRound.PrimeNumbers</mainClass>
+                        <mainClass>CodingInterviewPrograms.BrightChamps.TechnicalRound.FibonacciSequence</mainClass>
                     </configuration>
                 </plugin>
             </plugins>
