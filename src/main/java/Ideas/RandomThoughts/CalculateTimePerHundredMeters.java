@@ -17,7 +17,7 @@ public class CalculateTimePerHundredMeters {
     private CalculateTimePerHundredMeters() throws JacksonException {
         ObjectMapper distanceAndTimeDataObjectMapper = new ObjectMapper();
         distanceAndTimeData = distanceAndTimeDataObjectMapper.readValue(
-                new File("src/main/resources/Distance_and_Time_Data_5.json"), DistanceAndTimeData.class);
+                new File("src/main/resources/Distance_and_Time_Data_7.json"), DistanceAndTimeData.class);
     }
 
     private List<Float> getSplitDistanceArray() {

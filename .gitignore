@@ -438,3 +438,6 @@ hs_err_pid*
 *.ctxt
 .mvn/timing.properties
 .vscode/settings.json
+
+src/main/resources/Distance_and_Time_Data_*.json
+src/main/resources/Distance_and_Time_Data.json
