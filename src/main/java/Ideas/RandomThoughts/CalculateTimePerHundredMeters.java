@@ -70,7 +70,7 @@ public class CalculateTimePerHundredMeters {
                 int splitTimeInSeconds = Integer.parseInt(hoursMinutesSeconds[1]) * 60 +
                         Integer.parseInt(hoursMinutesSeconds[2]);
 
-                float splitDistance = roundedUpDistanceCalculation(splitDistanceList.get(i), 1);
+                float splitDistance = roundedUpDistanceCalculation(splitDistanceList.get(i));
                 float hundredMeterCount = splitDistance * 10;
 
                 splitTimePerHundredMeters.add(splitTimeInSeconds / hundredMeterCount);
@@ -80,13 +80,13 @@ public class CalculateTimePerHundredMeters {
         }
 
         for (float singleHundredMeterTime : splitTimePerHundredMeters) {
-            System.out.printf("%.2f\n", roundedUpDistanceCalculation(singleHundredMeterTime, 2));
+            System.out.printf("%.3f\n", roundedUpDistanceCalculation(singleHundredMeterTime));
         }
     }
 
-    private static float roundedUpDistanceCalculation(float originalSplitDistance, int decimalDigitPrecision) {
+    private static float roundedUpDistanceCalculation(float originalSplitDistance) {
         BigDecimal roundedUpSplitDistance = new BigDecimal(Float.toString(originalSplitDistance));
-        roundedUpSplitDistance = roundedUpSplitDistance.setScale(decimalDigitPrecision, RoundingMode.HALF_UP);
+        roundedUpSplitDistance = roundedUpSplitDistance.setScale(4, RoundingMode.HALF_UP);
         return roundedUpSplitDistance.floatValue();
     }
 }
