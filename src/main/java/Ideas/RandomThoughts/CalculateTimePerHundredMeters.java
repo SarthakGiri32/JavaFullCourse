@@ -27,7 +27,7 @@ public class CalculateTimePerHundredMeters {
 
     private CalculateTimePerHundredMeters(String lapDataFileName) throws JacksonException {
         try {
-            allLapData = getLapDataObjectMapper(lapDataFileName);
+            allLapData = getDistanceAndTimeDataObject(lapDataFileName);
         } catch (DatabindException e) {
             System.out.println("Invalid JSON structure:\n" + e.getMessage());
             throw e;
@@ -48,7 +48,14 @@ public class CalculateTimePerHundredMeters {
         return allLapData.getSplitTimeArray();
     }
 
-    private static DistanceAndTimeData getLapDataObjectMapper(String lapDataFileName) {
+    /**
+     * Creates an ObjectMapper object, read lap data from an input JSON file, and return
+     * a DistanceAndTimeData object containing the split time and distance data lists
+     * (Create a 'resources' folder inside the 'src/main' directory to store that JSON file)
+     * @param lapDataFileName lap time JSON data file name (with file extension)
+     * @return DistanceAndTimeData object containing the split time and distance data lists
+     */
+    private static DistanceAndTimeData getDistanceAndTimeDataObject(String lapDataFileName) {
         if (lapDataFileName == null) {
             throw new IllegalArgumentException("lap time data file name is null");
         }
@@ -56,8 +63,7 @@ public class CalculateTimePerHundredMeters {
             throw new IllegalArgumentException("Invalid lap time data file type: " + lapDataFileName);
         }
         return new ObjectMapper().readValue(
-                new File("src/main/resources/" + lapDataFileName),
-                DistanceAndTimeData.class);
+                new File("src/main/resources/" + lapDataFileName), DistanceAndTimeData.class);
     }
 
     private static class DistanceAndTimeData {
