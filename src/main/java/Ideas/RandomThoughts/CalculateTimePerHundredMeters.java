@@ -48,6 +48,13 @@ public class CalculateTimePerHundredMeters {
         return allLapData.getSplitTimeArray();
     }
 
+    /**
+     * Creates an ObjectMapper object, read lap data from an input JSON file, and return
+     * a DistanceAndTimeData object containing the split time and distance data lists
+     * (Create a 'resources' folder inside the 'src/main' directory to store that JSON file)
+     * @param lapDataFileName lap time JSON data file name (with file extension)
+     * @return DistanceAndTimeData object containing the split time and distance data lists
+     */
     private static DistanceAndTimeData getLapDataObjectMapper(String lapDataFileName) {
         if (lapDataFileName == null) {
             throw new IllegalArgumentException("lap time data file name is null");
